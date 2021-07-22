@@ -17,7 +17,18 @@ composer require sebrave/laravel-carbon-intensity
 
 ```php
 $api = new \Sebrave\LaravelCarbonIntensity\LaravelCarbonIntensity();
+
+// Get current forecast
 $api->get();
+
+// Get forecast for a Carbon date
+$api->getByDate(now());
+
+// Get forecase for first part of a UK postcode
+$api->getByPostcode('EC1V');
+
+// Get a breakdown by fuel type
+$api->getBreakdown();
 ```
 
 ## Testing
