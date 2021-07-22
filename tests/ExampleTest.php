@@ -1,6 +1,6 @@
 <?php
 
-namespace VendorName\Skeleton\Tests;
+namespace Sebrave\LaravelCarbonIntensity\Tests;
 
 class ExampleTest extends TestCase
 {

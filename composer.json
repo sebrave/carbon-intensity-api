@@ -1,24 +1,25 @@
 {
-    "name": "vendor_slug/package_slug",
-    "description": ":package_description",
+    "name": "sebrave/laravel-carbon-intensity",
+    "description": "Wrapper for UK National Grid Carbon Intensity API",
     "keywords": [
-        ":vendor_name",
+        "sebrave",
         "laravel",
-        "package_slug"
+        "laravel-carbon-intensity"
     ],
-    "homepage": "https://github.com/vendor_slug/package_slug",
+    "homepage": "https://github.com/sebrave/laravel-carbon-intensity",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "sebrave",
+            "email": "sebastian.ravenscroft@gmail.com",
             "role": "Developer"
         }
     ],
     "require": {
         "php": "^8.0",
-        "spatie/laravel-package-tools": "^1.4.3",
-        "illuminate/contracts": "^8.37"
+        "guzzlehttp/guzzle": "^7.3",
+        "illuminate/contracts": "^8.37",
+        "spatie/laravel-package-tools": "^1.4.3"
     },
     "require-dev": {
         "brianium/paratest": "^6.2",
@@ -30,13 +31,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Sebrave\\LaravelCarbonIntensity\\": "src",
+            "Sebrave\\LaravelCarbonIntensity\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Sebrave\\LaravelCarbonIntensity\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -50,10 +51,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Sebrave\\LaravelCarbonIntensity\\LaravelCarbonIntensityServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\SkeletonFacade"
+                "LaravelCarbonIntensity": "Sebrave\\LaravelCarbonIntensity\\LaravelCarbonIntensityFacade"
             }
         }
     },

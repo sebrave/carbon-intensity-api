@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Sebrave\LaravelCarbonIntensity\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelCarbonIntensityCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-carbon-intensity';
 
     public $description = 'My command';
 
