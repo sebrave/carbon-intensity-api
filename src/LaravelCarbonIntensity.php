@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Http;
 
 class LaravelCarbonIntensity
 {
-    public string $baseUrl;
+    private string $baseUrl;
 
     public function __construct()
     {
